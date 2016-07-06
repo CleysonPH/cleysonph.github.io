@@ -1,17 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-	<meta charset="UTF-8">
-	<title>Meu Site</title>
+	<meta charset="utf-8">
+	<!--Import Google Icon Font-->
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--Import materialize.css-->
+	<link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+	<!-- Import pace css -->
+	<link rel="stylesheet" href="pace/pace-theme-flash.css">
+
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+	<title>Sobre Mim</title>
 </head>
+
 <body>
-	<h1 style="text-align: center;">Bem Vindo a minha página!</h1>
-	<p style="text-align: center;">Olá o meu nome é Cleyson, eu sou aluno de Licenciatura em Informatica no IFPI</p>
-	<center>
-		<a href="https://www.facebook.com/cleysonph" target="_blank">
-			<img src="imagens/perfil.jpg" alt="Foto de perfil" width="300">
-		</a>
-		<p>Contato: cleysonph@gmail.com</p>
-	</center>
+	<div class="navbar-fixed">
+		<nav>
+			<div class="nav-wraper">
+				<a href="#" class="brand-logo center">
+					CleysonPH
+				</a>
+			</div>
+		</nav>
+	</div>
+
+	<div class="container">
+		<br><br>
+		
+		<div class="row center">
+			<div class="col s12">
+				<h1>Bem Vindo a minha página</h1>	
+			</div>
+		</div>
+
+		<div class="row center">
+			<div class="col s12">
+				<p class="flow-text">Olá o meu nome é Cleyson, eu sou aluno de Licenciatura em Informatica no IFPI</p>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col s8 offset-s2">
+				<img src="imagens/perfil.jpg" alt="" class="responsive-img materialboxed" data-caption="Foto minha de quando fui para Parnaiba">	
+			</div>
+		</div>
+		
+		<div class="row center">
+			<div class="col s12">
+				<a href="https://www.facebook.com/cleysonph" class="waves-effect waveslight btn tooltipped" data-position="top" data-delay="50" data-tooltip="Meu Facebook!" target="_blank"><i class="material-icons left">contacts</i>FACEBOOK</a>	
+			</div>
+		</div>
+	</div>
+
+	<!--Import jQuery before materialize.js-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<!-- Import materialize.js -->
+	<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+	<!-- Import pace js -->
+	<script type="text/javascript" src="pace/pace.min.js"></script>
 </body>
 </html>
