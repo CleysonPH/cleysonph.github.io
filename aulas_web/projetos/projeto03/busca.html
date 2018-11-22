@@ -11,8 +11,6 @@
         crossorigin="anonymous">
     <!-- Custom CSS Link -->
     <link rel="stylesheet" href="static/css/style.css">
-    <!-- Font Awesome Link -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
     <title>Projeto Web</title>
 </head>
@@ -30,18 +28,18 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="home.html">Home</a>
+                    <a class="nav-link" href="home.html">Home<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="quem_somos.html">Quem Somos</a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="contato.html">Contato<span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="contato.html">Contato</a>
                 </li>
                 <li class="nav-item">
                     <a href="pacotes.html" class="nav-link">Destinos</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a href="busca.html" class="nav-link">Buscar Pacotes</a>
                 </li>
             </ul>
@@ -50,37 +48,43 @@
     <!-- NavBar End -->
 
     <!-- Content Start -->
-    <div class="conatiner">
+    <div class="container">
         <div class="row">
-            <div class="col-sm-10 offset-sm-1">
-                <img src="static/img/contato.png" alt="" class="img-fluid">
+            <div class="col sm-12">
+                <div class="pb-2 mb-5 border-bottom">
+                    <h1>Programe a sua viagem</h1>
+                </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-10 offset-sm-1">
-                <form action="">
+            <div class="col sm-12">
+                <form action="" class="mb-5">
                     <div class="form-group">
-                        <label for="name">Nome</label>
-                        <input type="text" class="form-control" id="name" placeholder="Qual o seu nome?">
+                        <label for="origem">Origem</label>
+                        <input type="text" class="form-control" id="origem" placeholder="Qual a sua origem?">
                     </div>
                     <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" class="form-control" placeholder="Qual o seu email?">
+                        <label for="Destino">Destino</label>
+                        <input type="text" id="destino" class="form-control" placeholder="Qual o seu destino?">
                     </div>
-                    <div class="form-group">
-                        <label for="subject">Assunto</label>
-                        <select id="subject" class="form-control">
-                            <option>Orçamento</option>
-                            <option>Dúvida</option>
-                            <option>Crítica</option>
-                            <option>Sugestão</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Mensagem</label>
-                        <textarea class="form-control" id="message" rows="4"></textarea>
-                    </div>
+                    <div class="form-inline mb-4">
+                        <label for="partida">Data de partida</label>
+                        <input class="form-control mr-2 ml-2" type="date" name="partida" id="partida" placeholder="Data de Partida">
 
+                        <label for="retorno">Data de retorno</label>
+                        <input class="form-control ml-2" type="date" name="retorno" id="retorno" placeholder="Data de Retorno">
+                    </div>
+                    <div class="form-inline mb-4">
+                        <label for="quartos">Quartos</label>
+                        <input type="number" name="quartos" id="quartos" class="form-control ml-2">
+
+                        <label for="adultos" class="ml-2">Adultos</label>
+                        <input type="number" name="adultos" id="adultos" class="form-control ml-2">
+
+                        <label for="criancas" class="ml-2">Crianças</label>
+                        <input type="number" name="criancas" id="criancas" class="form-control ml-2">
+                    </div>
+                
                     <button class="btn btn-primary" type="submit">Enviar <i class="fas fa-paper-plane"></i></button>
                 </form>
             </div>

@@ -11,8 +11,6 @@
         crossorigin="anonymous">
     <!-- Custom CSS Link -->
     <link rel="stylesheet" href="static/css/style.css">
-    <!-- Font Awesome Link -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
     <title>Projeto Web</title>
 </head>
@@ -30,15 +28,15 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="home.html">Home</a>
+                    <a class="nav-link" href="home.html">Home<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="quem_somos.html">Quem Somos</a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="contato.html">Contato<span class="sr-only">(current)</span></a>
-                </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="contato.html">Contato</a>
+                </li>
+                <li class="nav-item active">
                     <a href="pacotes.html" class="nav-link">Destinos</a>
                 </li>
                 <li class="nav-item">
@@ -50,39 +48,49 @@
     <!-- NavBar End -->
 
     <!-- Content Start -->
-    <div class="conatiner">
-        <div class="row">
-            <div class="col-sm-10 offset-sm-1">
-                <img src="static/img/contato.png" alt="" class="img-fluid">
-            </div>
+    <div class="container">
+        <div class="pb-2 mb-5 border-bottom">
+            <h1>Destinos</h1>
         </div>
-        <div class="row">
-            <div class="col-sm-10 offset-sm-1">
-                <form action="">
-                    <div class="form-group">
-                        <label for="name">Nome</label>
-                        <input type="text" class="form-control" id="name" placeholder="Qual o seu nome?">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" class="form-control" placeholder="Qual o seu email?">
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Assunto</label>
-                        <select id="subject" class="form-control">
-                            <option>Orçamento</option>
-                            <option>Dúvida</option>
-                            <option>Crítica</option>
-                            <option>Sugestão</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Mensagem</label>
-                        <textarea class="form-control" id="message" rows="4"></textarea>
-                    </div>
 
-                    <button class="btn btn-primary" type="submit">Enviar <i class="fas fa-paper-plane"></i></button>
-                </form>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="static/img/fortaleza.jpg" alt="Imagem da praia de Fortaleza">
+                    <div class="card-body">
+                        <h5 class="card-title">Réveillon Fortaleza 2019</h5>
+                        <p class="card-text">
+                            Transporte executivo + Serviço de bordo + Guia + Brindes + Hospedagem categoria turística na Pousada Vitória Praia do futuro + Passeio na praia Porto de Dunas
+                        </p>
+                        <p class="card-text">
+                            Saida Teresina 29/12/18 20:00 Retorno Fortaleza 02/01/2019 15:00
+                        </p>
+                        <p class="card-text">
+                            Quartos: Quadruplos, Sêxtuplos R$ 650,00 à vista Por pessoa.
+                        </p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="static/img/lagoinha.jpg" alt="Imagem da praia de Fortaleza">
+                    <div class="card-body">
+                        <h5 class="card-title">Lagoinha CE</h5>
+                        <p class="card-text">
+                            Transporte executivo + Serviço de bordo + Guia + Brindes + Hospedagem categoria turística na Pousada
+                            Vitória Praia do futuro + Passeio na praia Porto de Dunas
+                        </p>
+                        <p class="card-text">
+                            Saida Teresina 14/12/2018 Retorno Lagoinha 16/12/2018.
+                        </p>
+                        <p class="card-text">
+                            Apartamento Duplo (Por pessoa)R$ 350,00 à vista. <br>
+                            Apartamento Quáduplo: (Por pessoa) R$ 300,00 à vista.
+                        </p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
