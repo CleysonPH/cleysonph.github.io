@@ -1,0 +1,61 @@
+div {
+    border: 1px solid red;
+}
+
+table {
+    font-family: Verdana, Geneva, Arial, Helvetica;
+    font-size: 10pt;
+    text-align: center;
+    padding-left: 4px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid black;
+}
+
+th {
+    background-color: #b2beff;
+}
+
+.copy {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.linha-par {
+    background-color: #e0eee0;
+}
+
+.linha-par:hover, .linha-impar:hover, .linha-total:hover {
+    background-color: white;
+}
+
+.linha-impar {
+    background-color: #c1cdc1;
+}
+
+.linha-total {
+    background-color: #eee0e5;
+}
+
+#menu {
+    background-color: gray;
+    height: 200px;
+    width: 100px;
+    float: left;
+}
+
+#conteudo {
+    background-color: #cece7b
+}
+
+#rodape {
+    background-color: rgb(206, 141, 123);
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
