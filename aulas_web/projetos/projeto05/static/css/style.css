@@ -1,0 +1,16 @@
+body {
+    background-color: #8da8b7;
+}
+
+.imagem {
+    background-color: white;
+    width: min-content;
+    padding: 5px 5px 20px 5px;
+    float: left;
+    margin: 5px;
+}
+
+p {
+    clear: both;
+    text-align: justify;
+}
