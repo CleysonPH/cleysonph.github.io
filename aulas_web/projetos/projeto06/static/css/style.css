@@ -85,7 +85,7 @@ main p {
 footer {
     padding: 0.5em 0;
     background-color: #4ba3c7;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
     text-align: center;
