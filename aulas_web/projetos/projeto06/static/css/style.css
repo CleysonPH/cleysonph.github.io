@@ -24,13 +24,14 @@ nav ul li {
     margin: 0 auto;
 }
 
-nav ul li:hover {
-    border-width: 0 0 5px 0;
+nav ul li a:hover {
+    border-width: 5px 0 0 0;
     border-color: #4ba3c7;
     border-style: solid;
 }
 
 nav ul li a {
+    padding: 10px;
     text-decoration: none;
     color: #000;
     text-transform: uppercase;
@@ -113,6 +114,14 @@ footer a {
     }
 
     nav ul li {
-        padding: 0.2em 0;
+        margin: 0 5px;
+    }
+
+    nav ul li a {
+        padding: 0 5px;
+    }
+
+    nav ul li a:hover {
+        border-width: 0 0 0 5px;
     }
 }
