@@ -57,9 +57,29 @@ article header {
     border-color: rgba(255, 0, 0, .1);
     border-style: solid;
     margin-bottom: 0.5em;
+    padding: 1em 0;
 }
 
-article p {
+article header h2 {
+    margin: 0.3em 0;
+    padding: 0;
+}
+
+article header span {
+    font-size: 0.8em;
+    opacity: 0.5;
+}
+
+article section {
+    margin-top: 1em;
+}
+
+article section img {
+    float: left;
+    margin-right: 1em;
+}
+
+article section p {
     text-align: justify;
 }
 
