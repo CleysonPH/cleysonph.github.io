@@ -62,3 +62,17 @@ article header {
 article p {
     text-align: justify;
 }
+
+footer {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    background-color: #002171;
+    text-align: center;
+    padding: 0.5em;
+}
+
+footer * {
+    color: #fff;
+    text-decoration: none;
+}
