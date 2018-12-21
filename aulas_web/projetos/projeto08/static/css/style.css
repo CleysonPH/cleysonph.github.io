@@ -36,7 +36,7 @@ nav ul li a {
 
 nav ul li a:hover {
     border-width: 5px 0 0 0;
-    border-color: #03a9f4;
+    border-color: rgba(3, 169, 244, 0.5);
     border-style: solid;
     padding-top: 5px;
 }
@@ -81,6 +81,15 @@ article section img {
 
 article section p {
     text-align: justify;
+}
+
+article section .autor {
+    border-width: 0 0 0 5px;
+    border-color: rgba(255, 0, 0, .2);
+    border-style: solid;
+    padding-left: 0.2em;
+    font-weight: 500;
+    font-size: 1.1em;
 }
 
 footer {
