@@ -2,13 +2,13 @@ body {
     background-color: #E1E2E1;
 }
 
-.logo {
+#logo {
     margin: 0;
     background-color: #002171;
     padding: 1em;
 }
 
-.logo h1 {
+#logo h1 {
     margin: 0;
     color: #fff;
 }
