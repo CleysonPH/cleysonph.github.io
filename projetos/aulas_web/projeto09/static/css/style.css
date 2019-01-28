@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+:root {
+    --primary-color: #fafafa;
+    --light-color: #ffffff;
+    --dark-color: #c7c7c7;
+    --background-color: #f5f4f6;
+    --text-color: #000;
+    --logo-primary-color: #2d6aaa;
+    --logo-second-color: #fadb00;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: 'Open Sans', sans-serif;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    background-color: var(--primary-color);
+    justify-content: space-between;
+    padding: 0 20px;
+    border-bottom: 5px solid transparent;
+    border-color: var(--dark-color); /* fallback for old browsers */
+    -webkit-border-image: -webkit-linear-gradient(
+        to right,
+        var(--logo-primary-color) 50%,
+        var(--logo-second-color) 50%
+    );
+    -moz-border-image: -moz-linear-gradient(
+        to right,
+        var(--logo-primary-color) 50%,
+        var(--logo-second-color) 50%
+    );
+    -o-border-image: -o-linear-gradient(
+        to right,
+        var(--logo-primary-color) 50%,
+        var(--logo-second-color) 50%
+    );
+    border-image: linear-gradient(
+        to right,
+        var(--logo-primary-color) 50%,
+        var(--logo-second-color) 50%
+    );
+    border-image-slice: 1;
+}
+
+#logo {
+    align-self: center;
+}
+
+#logo h1 {
+    color: var(--logo-primary-color);
+    margin: 0;
+    padding: 0;
+}
+
+#logo h1 span {
+    color: var(--logo-second-color);
+}
+
+#logo h1 a {
+    text-decoration: none;
+}
+
+nav {
+    align-self: center;
+}
+
+nav ul {
+    margin: 0;
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--text-color);
+    opacity: 0.5;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    opacity: 1;
+    color: #fff;
+    border-radius: 20px;
+    background-color: var(--logo-primary-color);
+    
+}
+
+main {
+    width: 60vw;
+    margin: auto;
+    margin-top: 130px;
+}
+
+main>h2 {
+    text-align: center;
+    font-size: 2em;
+    text-transform: capitalize;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+article {
+    background: #70e1f5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffd194, #70e1f5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: -moz-linear-gradient(to right, #ffd194, #70e1f5);
+    background: -o-linear-gradient(to right, #ffd194, #70e1f5);
+    background: linear-gradient(to right, #ffd194, #70e1f5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    -webkit-box-shadow: 4px 6px 10px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 4px 6px 10px 0px rgba(0,0,0,1);
+    box-shadow: 4px 6px 10px 0px rgba(0,0,0,0.5);
+}
+
+article h2 {
+    margin-bottom: 2px;
+    text-shadow: 4px 4px 5px rgba(150, 150, 150, 1);
+    text-transform: capitalize;
+}
+
+article span {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+
+article header {
+    border-bottom: 2px solid transparent;
+    border-color: var(--dark-color); /* fallback for old browsers */
+    -webkit-border-image: -webkit-linear-gradient(
+        to right,
+        var(--logo-primary-color),
+        var(--logo-second-color)
+    );
+    -moz-border-image: -moz-linear-gradient(
+        to right,
+        var(--logo-primary-color),
+        var(--logo-second-color)
+    );
+    -o-border-image: -o-linear-gradient(
+        to right,
+        var(--logo-primary-color),
+        var(--logo-second-color)
+    );
+    border-image: linear-gradient(
+        to right,
+        var(--logo-primary-color),
+        var(--logo-second-color)
+    );
+    border-image-slice: 1;
+    padding-bottom: 20px;
+    margin-bottom: 5px;
+}
+
+article section img {
+    min-width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+    margin: 0 10px 10px 0;
+}
+
+article section p {
+    text-align: justify;
+}
+
+article:last-of-type {
+    margin-bottom: 50px;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    background-color: var(--dark-color);
+    text-align: center;
+    padding: 0.5em;
+}
+
+footer * {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+@media (max-width: 730px) {
+    #header {
+        display: block;
+        height: 200px;
+    }
+
+    #header h1 {
+        margin: 10px 0;
+        margin-left: 5px;
+    }
+
+    #header ul {
+        padding: 0;
+        display: block;
+    }
+
+    #header ul li {
+        margin: 15px 0;
+    }
+
+    #header ul li a {
+        padding: 5px;
+    }
+
+    #header {
+        position: initial;
+    }
+
+    main {
+        margin-top: 30px;
+        width: 90%;
+    }
+}

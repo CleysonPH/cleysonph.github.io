@@ -1,0 +1,30 @@
+main a {
+    display: block;
+    background-color: var(--logo-primary-color);
+    color: var(--text-color);
+    border: 1px solid black;
+    padding: 10px;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+main a:hover {
+    background-color: var(--logo-second-color);
+}
+
+main a:last-of-type {
+    margin-bottom: 50px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+}
+
+@media (max-width: 730px) {
+    footer {
+        position: relative;
+        width: 100%;
+        bottom: 0;
+    }
+}

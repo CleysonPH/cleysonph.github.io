@@ -73,7 +73,8 @@ main section {
 }
 
 #email {
-    width: 30%;;
+    width: 30%;
+    min-width: 200px;
     border-radius: 2px;
     border: 1px solid rgba(0, 0, 0, 0.4);
     padding: 2px;
@@ -117,6 +118,10 @@ main section {
 #how-works {
     display: grid;
     justify-content: center;
+}
+
+#video {
+  max-width: 100%;
 }
 
 #pricing {
@@ -204,6 +209,10 @@ footer ul li a:hover {
     #nav-bar ul li {
         margin: 0;
         padding: 5px 0;
+    }
+  
+    section {
+        min-width: 250px;
     }
 
     .feature {
