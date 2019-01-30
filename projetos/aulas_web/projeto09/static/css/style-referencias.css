@@ -6,6 +6,8 @@ main a {
     text-decoration: none;
     margin-bottom: 5px;
     border-radius: 20px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
     text-align: center;
 }
