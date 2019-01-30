@@ -1,14 +1,17 @@
 main a {
     display: block;
     background-color: var(--logo-primary-color);
-    color: var(--text-color);
-    border: 1px solid black;
+    color: white;
     padding: 10px;
     text-decoration: none;
     margin-bottom: 5px;
+    border-radius: 20px;
+    transition: all 0.5s ease-in-out;
+    text-align: center;
 }
 
 main a:hover {
+    color: black;
     background-color: var(--logo-second-color);
 }
 

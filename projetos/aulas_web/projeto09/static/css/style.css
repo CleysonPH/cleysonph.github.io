@@ -8,6 +8,9 @@
     --text-color: #000;
     --logo-primary-color: #2d6aaa;
     --logo-second-color: #fadb00;
+    --shadow-color: rgb(156, 156, 156);
+    --gradient-first-color: #e5e5e5;
+    --gradient-second-color: #9ee2dd;
 }
 
 * {
@@ -57,6 +60,8 @@ body {
         var(--logo-second-color) 50%
     );
     border-image-slice: 1;
+    -webkit-box-shadow: 2px 2px 10px 0 var(--shadow-color);
+    box-shadow: 1px 1px 10px 0 var(--shadow-color);
 }
 
 #logo {
@@ -93,22 +98,25 @@ nav ul {
     list-style: none;
 }
 
+nav ul li {
+    margin-left: 10px;
+}
+
 nav ul li a{
     text-decoration: none;
     color: var(--text-color);
     opacity: 0.5;
     border-radius: 20px;
     padding: 10px;
-    -webkit-transition: background-color 0.4s ease-in-out;
-    -o-transition: background-color 0.4s ease-in-out;
-    transition: background-color 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
 nav ul li a:hover {
     opacity: 1;
     color: #fff;
     background-color: var(--logo-primary-color);
-    
 }
 
 main {
@@ -126,23 +134,27 @@ main>h2 {
 }
 
 article {
-    background: #70e1f5;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #ffd194, #70e1f5);  /* Chrome 10-25, Safari 5.1-6 */
-    background: -o-linear-gradient(to right, #ffd194, #70e1f5);
-    background: -webkit-gradient(linear, left top, right top, from(#ffd194), to(#70e1f5));
-    background: -webkit-linear-gradient(left, #ffd194, #70e1f5);
-    background: -o-linear-gradient(left, #ffd194, #70e1f5);
-    background: linear-gradient(to right, #ffd194, #70e1f5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
-    padding: 10px;
-    margin-bottom: 30px;
+    background: var(--gradient-second-color);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, var(--gradient-first-color), var(--gradient-second-color));  /* Chrome 10-25, Safari 5.1-6 */
+    background: -o-linear-gradient(to right, var(--gradient-first-color), var(--gradient-second-color));
+    background: -webkit-gradient(linear, left top, right top, from(var(--gradient-first-color)), to(var(--gradient-second-color)));
+    background: -webkit-linear-gradient(left, var(--gradient-first-color), var(--gradient-second-color));
+    background: -o-linear-gradient(left, var(--gradient-first-color), var(--gradient-second-color));
+    background: linear-gradient(to right, var(--gradient-first-color), var(--gradient-second-color)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    padding: 5px 20px 20px 20px;
+    margin-bottom: 50px;
     border-radius: 10px;
-    -webkit-box-shadow: 4px 6px 10px 0px rgba(0,0,0,1);
-    box-shadow: 4px 6px 10px 0px rgba(0,0,0,0.5);
+    transition: all 0.4s ease-in-out;
+}
+
+article:hover {
+    -webkit-box-shadow: 2px 2px 10px 0 var(--shadow-color);
+    box-shadow: 2px 2px 10px 0 var(--shadow-color);
 }
 
 article h2 {
     margin-bottom: 2px;
-    text-shadow: 4px 4px 5px rgba(150, 150, 150, 1);
+    text-shadow: 4px 4px 5px var(--shadow-color);
     text-transform: capitalize;
 }
 
@@ -176,8 +188,8 @@ article header {
         var(--logo-second-color)
     );
     border-image-slice: 1;
-    padding-bottom: 20px;
-    margin-bottom: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 article section img {
