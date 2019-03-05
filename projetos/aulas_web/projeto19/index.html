@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Raiz Quadra JS</title>
+</head>
+<body>
+    <input type="number" placeholder="Valor a ser calculado" id="entrada">
+    <button onclick="raiz_quadrada()">Raiz Quadrada</button>
+
+    <script>
+        function raiz_quadrada(){
+            valor = document.getElementById('entrada').value
+
+            alert(Math.sqrt(valor))
+        }
+    </script>
+</body>
+</html>
