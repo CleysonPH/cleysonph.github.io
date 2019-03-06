@@ -1,8 +1,8 @@
 function escrever(){
-    var final = parseInt(prompt('Valor final da contagem?'))
+    let final = parseInt(prompt('Valor final da contagem?'))
 
-    var caderno = document.getElementById('caderno')
-    var caderno.innerHTML = ""
+    let caderno = document.getElementById('caderno')
+    caderno.innerHTML = ""
 
     for (let count = 1; count <= final; count++) {
         caderno.innerHTML += count + '<br>'        
