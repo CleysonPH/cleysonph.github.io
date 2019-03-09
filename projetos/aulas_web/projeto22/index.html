@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Eventos do mouse JQuery</title>
+
+    <style>
+        .caixa {
+            width: 300px;
+            height: 290px;
+            display: inline-block;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .red {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="caixa blue" id="dbclick">Caixa 01 - Evento dbclick</div>
+    <div class="caixa red" id="mouseover">Caixa 02 - Evento mouseover</div>
+
+    <!-- Optional JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        $('#dbclick').dblclick(function(){
+            alert('Evento de double click')
+        })
+
+        $('#mouseover').mouseover(function() {
+            alert('Evento de mouse over')
+        })
+    </script>
+</body>
+
+</html>
