@@ -171,6 +171,7 @@
                 </div>
 
                 <button type="submit" class="btn btn-primary">Cadastrar <i class="fas fa-paper-plane"></i></i></button>
+                <button id="limparCampos" class="btn btn-danger">Limpar Campos <i class="fas fa-brush"></i></button>
             </form>
         </div>
     </div>
@@ -195,6 +196,12 @@
         $('#cpfFormControlInput').mask('000.000.000-00', {reverse: true})
         $('#telefoneFormControlInput').mask('(00) 0000-0000')
         $('#dataNascimentoFormControlInput').mask('00/00/0000')
+
+        $('#limparCampos').click(function() {
+            $('form').submit(function(){
+                $(this)[0].reset();
+            });
+        })
     </script>
 </body>
 </html>
