@@ -198,9 +198,8 @@
         $('#dataNascimentoFormControlInput').mask('00/00/0000')
 
         $('#limparCampos').click(function() {
-            $('form').submit(function(){
-                $(this)[0].reset();
-            });
+            $('input').val('')
+            $('textarea').val('')
         })
     </script>
 </body>
