@@ -12,7 +12,7 @@
     <!-- Date Picker CSS Link -->
     <link href="https://unpkg.com/gijgo@1.9.11/css/gijgo.min.css" rel="stylesheet" type="text/css" />
 
-    <title>Academia Pele & Osso - Cadastro Aluno</title>
+    <title>Academia Pele & Osso - Cadastro Professor</title>
 </head>
 <body>
     <!-- NavBar stats -->
@@ -39,10 +39,10 @@
                             <i class="fas fa-plus"></i> Cadastrar
                         </a>
                         <div class="dropdown-menu" aria-labelledby="cadastroDropdown">
-                            <a class="dropdown-item active" href="#">
+                            <a class="dropdown-item" href="aluno.html">
                                 <i class="fas fa-graduation-cap"></i> Aluno
                             </a>
-                            <a class="dropdown-item" href="professor.html">
+                            <a class="dropdown-item active" href="#">
                                 <i class="fas fa-chalkboard-teacher"></i> Professor
                             </a>
                             <div class="dropdown-divider"></div>
@@ -103,7 +103,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12 border-bottom mt-2 mb-4">
-                <h1>Cadastrar Aluno</h1>
+                <h1>Cadastrar Professor</h1>
             </div>
         </div>
 
@@ -165,12 +165,33 @@
                         </select>
                     </div>
                 </div>
-                <div class="form-group mt-3">
+                <div class="row mt-3">
+                    <div class="col-md-4">
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="estagiarioCheck">
+                            <label class="form-check-label" for="estagiarioCheck">Estagiario</label>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="faculdadeFormControlInput">Faculdade *</label>
+                            <input type="text" class="form-control" id="faculdadeFormControlInput" placeholder="Instituto Xavier Para Jovens Super Dotados" required>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="confefCrefControlInput">CONFEF | CREF *</label>
+                            <input type="number" class="form-control" id="confefCrefControlInput" placeholder="4567876542989" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
                     <label for="observacoesFormControlTextarea">Observações</label>
                     <textarea class="form-control" id="observacoesFormControlTextarea" rows="3"></textarea>
                 </div>
 
                 <button type="submit" class="btn btn-primary">Cadastrar <i class="fas fa-paper-plane"></i></i></button>
+                <button id="limparCampos" class="btn btn-danger">Limpar Campos <i class="fas fa-brush"></i></button>
             </form>
         </div>
     </div>
@@ -195,6 +216,12 @@
         $('#cpfFormControlInput').mask('000.000.000-00', {reverse: true})
         $('#telefoneFormControlInput').mask('(00) 0000-0000')
         $('#dataNascimentoFormControlInput').mask('00/00/0000')
+
+        $('#limparCampos').click(function() {
+            $('form').submit(function(){
+                $(this)[0].reset();
+            });
+        })
     </script>
 </body>
 </html>
