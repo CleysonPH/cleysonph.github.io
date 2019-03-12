@@ -12,7 +12,7 @@
     <!-- Date Picker CSS Link -->
     <link href="https://unpkg.com/gijgo@1.9.11/css/gijgo.min.css" rel="stylesheet" type="text/css" />
 
-    <title>Academia Pele & Osso - Cadastrar Aluno</title>
+    <title>Academia Pele & Osso - Cadastrar Exercício</title>
 </head>
 <body>
     <!-- NavBar stats -->
@@ -39,14 +39,14 @@
                             <i class="fas fa-plus"></i> Cadastrar
                         </a>
                         <div class="dropdown-menu" aria-labelledby="cadastroDropdown">
-                            <a class="dropdown-item active" href="#">
+                            <a class="dropdown-item" href="aluno.html">
                                 <i class="fas fa-graduation-cap"></i> Aluno
                             </a>
                             <a class="dropdown-item" href="professor.html">
                                 <i class="fas fa-chalkboard-teacher"></i> Professor
                             </a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="exercicio.html">
+                            <a class="dropdown-item active" href="#">
                                 <i class="fas fa-dumbbell"></i> Exercício
                             </a>
                         </div>
@@ -103,77 +103,64 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12 border-bottom mt-2 mb-4">
-                <h1>Cadastrar Aluno</h1>
+                <h1>Cadastrar Exercício</h1>
             </div>
         </div>
 
-        <div class="row">
-            <form class="col-sm-12">
-                <div class="form-group">
-                    <label for="fullNameFormControl">Nome Completo *</label>
-                    <input type="text" class="form-control" id="fullNameFormControl" placeholder="Fulaninho da Silva Sauro" required>
+        
+        <form class="row">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="examploExercicioFormControlFile">Imagem de exemplo do exercício</label>
+                        <input type="file" class="form-control-file" id="examploExercicioFormControlFile">
+                    </div>
+                    <img src="https://via.placeholder.com/500x400" alt="Imagem exemplo do exercio" class="img-fluid img-thumbnail">
                 </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="emailFormControlInput">Endereço de email</label>
-                            <input type="email" class="form-control" id="emailFormControlInput" placeholder="nome@examplo.com">
+                <div class="col-md-8">
+                    <div class="form-group">
+                        <label for="nomeExercicioFormControl">Nome do Exercício *</label>
+                        <input type="text" class="form-control" id="nomeExercicioFormControl" placeholder="Cadeira Extensora" required>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="cargaFormControl">Carga</label>
+                                <div class="input-group">
+                                    <input type="number" class="form-control" id="cargaFormControl" placeholder="50,5" step="0.25">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">Kg</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="repeticaoExercicioFormControl">Numero de Repetições</label>
+                                <input type="number" class="form-control" id="repeticaoExercicioFormControl" placeholder="12">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="secaoExercicioFormControl">Numero de Seções</label>
+                                <input type="number" class="form-control" id="secaoExercicioFormControl" placeholder="3">
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="telefoneFormControlInput">Telefone para contato *</label>
-                            <input type="text" class="form-control" id="telefoneFormControlInput" placeholder="(86) 99817-1671" required>
-                        </div>
+                    <div class="form-group">
+                        <label for="observacoesFormControlTextarea">Descrição do Exercício</label>
+                        <textarea class="form-control" id="observacoesFormControlTextarea" rows="6"></textarea>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label for="rgFormControlInput">RG *</label>
-                            <input type="number" class="form-control" id="rgFormControlInput" placeholder="123456" required>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label for="cpfFormControlInput">CPF *</label>
-                            <input type="text" class="form-control" id="cpfFormControlInput" placeholder="060.964.043-25" required>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label for="dataNascimentoFormControlInput">Data de nascimento *</label>
-                            <input type="text" class="form-control" id="dataNascimentoFormControlInput" placeholder="08/06/1994" required>
-                        </div>
-                    </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-12">
+                    <button type="submit" class="btn btn-primary">Cadastrar <i class="fas fa-paper-plane"></i></i></button>
+                    <button id="limparCampos" class="btn btn-danger">Limpar Campos <i class="fas fa-brush"></i></button>
                 </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <label for="pesoFormControlInput">Peso</label>
-                        <input type="number" class="form-control" id="pesoFormControlInput" placeholder="60,5" step="0.5">
-                    </div>
-                    <div class="col-md-4">
-                        <label for="alturaFormControlInput">Altura</label>
-                        <input type="number" class="form-control" id="alturaFormControlInput" placeholder="1,57" step=".05">
-                    </div>
-                    <div class="col-md-4">
-                        <label for="sexoFormControlSelect">Sexo *</label>
-                        <select class="form-control" id="sexoFormControlSelect" required>
-                            <option value="f">Feminino</option>
-                            <option value="m">Masculino</option>
-                            <option value="x">Prefere não informar</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="form-group mt-3">
-                    <label for="observacoesFormControlTextarea">Observações</label>
-                    <textarea class="form-control" id="observacoesFormControlTextarea" rows="3"></textarea>
-                </div>
-
-                <button type="submit" class="btn btn-primary">Cadastrar <i class="fas fa-paper-plane"></i></i></button>
-                <button id="limparCampos" class="btn btn-danger">Limpar Campos <i class="fas fa-brush"></i></button>
-            </form>
-        </div>
+            </div>
+        </form>
     </div>
     
 
