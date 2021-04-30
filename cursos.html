@@ -11,6 +11,12 @@
 			gtag('config', 'UA-114657654-1');
 		</script>
 
+		<style>
+			.card-reveal > p {
+				text-align: justify;
+			}
+		</style>
+
 
 		<meta charset="utf-8">
 		<!--Import Google Icon Font-->
@@ -18,34 +24,13 @@
 		<!--Import materialize.css-->
 		<link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
 		<!-- Import pace css -->
-		<link rel="stylesheet" href="pace/pace-theme-flash.css">
-    <!-- Import Emoji CSS -->
-    <link rel="stylesheet" href="https://afeld.github.io/emoji-css/emoji.css">
+		<link rel="stylesheet" href="static/css/pace-theme-flash.css">
 
 		<!--Let browser know website is optimized for mobile-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 		<meta name="description" content="Uma página simples de apresentação">
 		<meta name="keywords" content="CleysonPH, Cleyson de Sousa Lima, Cleyson Lima, Cleyson">
-
-		<!-- Favicons -->
-		<link rel="apple-touch-icon" sizes="57x57" href="imagens/favicons/apple-icon-57x57.png">
-		<link rel="apple-touch-icon" sizes="60x60" href="imagens/favicons/apple-icon-60x60.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="imagens/favicons/apple-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="imagens/favicons/apple-icon-76x76.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="imagens/favicons/apple-icon-114x114.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="imagens/favicons/apple-icon-120x120.png">
-		<link rel="apple-touch-icon" sizes="144x144" href="imagens/favicons/apple-icon-144x144.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="imagens/favicons/apple-icon-152x152.png">
-		<link rel="apple-touch-icon" sizes="180x180" href="imagens/favicons/apple-icon-180x180.png">
-		<link rel="icon" type="image/png" sizes="192x192"  href="imagens/favicons/android-icon-192x192.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="imagens/favicons/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="96x96" href="imagens/favicons/favicon-96x96.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="imagens/favicons/favicon-16x16.png">
-		<link rel="manifest" href="imagens/favicons/manifest.json">
-		<meta name="msapplication-TileColor" content="#ffffff">
-		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-		<meta name="theme-color" content="#ffffff">
 
 		<title>CleysonPH - Cursos</title>
 	</head>
@@ -55,7 +40,7 @@
 			<nav class="blue-grey lighten-1">
 				<div class="nav-wraper container">
 					<a href="index.html" class="brand-logo center">CleysonPH</a>
-					<a href="#" data-activates="mobile-demo" class="button-collapse"><img src="imagens/icons/menu.png" alt="" style="margin-top: 8px;"></a>
+					<a href="#" data-activates="mobile-demo" class="button-collapse"><img src="static/img/icons/menu.png" alt="" style="margin-top: 8px;"></a>
 
 					<ul class="right hide-on-med-and-down">
 						<li class="active"><a href="#">Cursos</a></li>
@@ -76,55 +61,48 @@
 
 			<div class="row center">
 				<div class="col s12">
-          <h1>Cursos que eu realizei <i class="em-svg em-wink"></i></h1>
+          <h1>Meus cursos na TreinaWeb</h1>
 				</div>
 			</div>
 
 			<!-- Linha 1 de cards -->
-			<div class="row center">
-				<div class="col m6">
+			<div class="row">
+				<div class="col l6">
 					<div class="card">
 						<div class="card-image waves-effect waves-block waves-light">
-							<img src="imagens/curso_html5.jpg" alt="Imagem do curso de HTML5" class="activator responsive-img">
+							<img src="static/img/cursos/spring_framework_fundamentos.png" alt="Imagem ilustrativa do curso Spring Framework - Fundamentos" class="activator responsive-img">
 						</div>
 						<div class="card-content">
-							<span class="card-title activator grey-text text-darken-4"><p class="flow-text">Desenvolvimento WEB</p></span>
-							<p><a href="https://www.udemy.com/certificate/UC-MI64TEGK/" target="_blank">Ver certificado</a></p>
+							<span class="card-title activator grey-text text-darken-4"><p class="flow-text">Spring Framework - Fundamentos</p></span>
+							<p><a href="https://www.treinaweb.com.br/curso/spring-framework-fundamentos" target="_blank">Ir para o curso</a></p>
 						</div>
 						<div class="card-reveal">
-							<span class="card-title activator grey-text text-darken-4">HTML5: Desenvolvimento WEB para iniciantes</span>
+							<span class="card-title activator grey-text text-darken-4">Spring Framework - Fundamentos</span>
 							<h5>Sobre o curso</h5>
-							<p>HTML significa Hypertext Markup Language que significa Linguagem de Marcação de Hipertexto. HTML é a linguagem base da Internet e é preciso sabê-la para desenvolver websites. HTML é uma linguagem baseada em marcação, nós marcamos os elementos para mostrar quais informações a página exibe!</p>
+							<p>Inicialmente desenvolvido para criação de aplicações web escritas em Java, e anteriormente denominado como Spring Framework, o Spring é um ecossistema de desenvolvimento para facilitar a criação de aplicações Java utilizando diversos módulos independentes. Com essa modularização, surgiu o projeto Spring, composto por diversos módulos, cada um com a sua especialidade. Estes módulos podem ser utilizados em conjunto com outros ou até com frameworks que não façam parte do ecossistema Spring. Dentre os principais módulos do Spring podemos citar, o Spring Boot, Spring Web MVC e o Spring Data, que serão abordados neste curso.</p>
 
-							<h5>Conhecimentos adiquiridos</h5>
-							<ul>
-								<li>Desenvolver seus websites utilizando HTML5.</li>
-								<li>Aprender sobre desenvolvimento web.</li>
-								<li>Colocar o seu site na web para outras pessoas acessarem.</li>
-								<li>Conhecer os recursos da linguagem HTML5.</li>
-							</ul>
+							<h5>Conhecimentos adquiridos</h5>
+							<p>Neste curso abordaremos como criar aplicações Java web com o Spring Boot, além disso, veremos como utilizar algumas das frameworks do projeto Spring trabalhando em conjunto, como o Spring Web MVC e Spring Data JPA. São vídeo aulas e apostilas que mostram os principais conceitos do projeto Spring, além de mostrar na prática como usá-los. Também serão passados exercícios para que você possa fixar, praticar e aplicar o conteúdo aprendido durante o curso.</p>
 						</div>
 					</div>
 				</div>
 
-				<div class="col m6">
+				<div class="col l6">
 					<div class="card">
 						<div class="card-image waves-effect waves-block waves-light">
-							<img src="imagens/curso_ubuntu.jpg" alt="Imagem do curso de Ubuntu Linux Completo" class="activator responsive-img">
+							<img src="static/img/cursos/spring_framework_templates_thymeleaf.png" alt="Imagem ilustrativa do curso Spring Framework - Templates com Thymeleaf" class="activator responsive-img">
 						</div>
 						<div class="card-content">
-							<span class="card-title activator grey-text text-darken-4"><p class="flow-text">Ubuntu Linux</p></span>
-							<p><a href="outros_arquivos/certificado_ubuntuLinux.pdf" target="_blank">Ver certificado</a></p>
+							<span class="card-title activator grey-text text-darken-4"><p class="flow-text">Spring Framework - Templates com Thymeleaf</p></span>
+							<p><a href="https://www.treinaweb.com.br/curso/spring-framewok-templates-com-thymeleaf" target="_blank">Ir para o curso</a></p>
 						</div>
 						<div class="card-reveal">
-							<span class="card-title activator grey-text text-darken-4">Ubuntu Linux Completo</span>
+							<span class="card-title activator grey-text text-darken-4">Spring Framework - Templates com Thymeleaf</span>
 							<h5>Sobre o curso</h5>
-							<p>Com a grande concorrência a necessidade de se aperfeiçoar é cada vez maior e certamente profissionais que dominam Linux são muito bem vistos pelo mercado de trabalho.</p>
-							<p>Afinal não é preciso dizer que Linux é o sistema operacional mais seguro que existe, e isso é tudo o que uma empresa quer.</p>
-							<p>Nesse curso você vai iniciar uma jornada para se transformar em um profissional apto a trabalhar com esse poderoso sistema operacional.</p>
+							<p>A criação da camada de visualização de dados é uma das mais importantes no desenvolvimento de uma aplicação web. É com ela que os usuários interagem com sua aplicação. Sendo assim, para desenvolver um conjunto de templates para nossos projetos, é de extrema importância conhecermos as melhores técnicas e ferramentas. Portanto, veremos neste curso como funciona o sistema de templates do Thymeleaf, como utilizá-lo da melhor forma possível e como integrá-lo com uma aplicação Spring Boot.</p>
 
 							<h5>Conhecimentos adquiridos</h5>
-							<p>Nesse curso veremos como instalar e usar os principais recursos do Ubuntu assim como vários de seus comandos, e como preparar esse sistema para trabalhar com PHP, Ruby e C/C++.</p>
+							<p>Neste curso abordaremos como se dá o funcionamento do Thymeleaf, como incorporá-lo em uma aplicação Spring Boot, uso de arquivos estáticos e internacionalização. Veremos tudo isso na prática durante o desenvolvimento de uma aplicação que irá conter todos os conceitos abordados. São videoaulas e apostilas que mostram como utilizar os principais recursos da template engine Thymeleaf. Também serão passados exercícios para que você possa fixar, praticar e aplicar o conteúdo aprendido durante o curso.</p>
 						</div>
 					</div>
 				</div>
@@ -132,121 +110,48 @@
 			<!-- Fim da linha 1 de cards -->
 
 			<!-- Linha 2 de cards -->
-			<div class="row center">
-				<div class="col m6">
+			<div class="row">
+				<div class="col l6">
 					<div class="card">
-						<div class="card-image waves-effect waves-block waves-light">
-							<img src="imagens/curso_linuxUdemy.jpg" alt="Imagem do curso de Linux: Comandos do Terminal" class="activator responsive-img">
+						<div class="card-image">
+							<img src="static/img/direto_ao_ponto/python_configurando_vscode.png" alt="Imagem ilustrativa do direto ao ponto Python - Configurando o VS Code" class="activator responsive-img">
 						</div>
 						<div class="card-content">
-							<span class="card-title activator grey-text text-darken-4"><p class="flow-text">Linux: Comandos do Terminal</p></span>
-							<p><a href="https://www.udemy.com/certificate/UC-S8I8D6UU/" target="_blank">Ver certificado</a></p>
-						</div>
-						<div class="card-reveal">
-							<span class="card-title activator grey-text text-darken-4">Linux: Comandos do Terminal</span>
-							<h5>Sobre o curso</h5>
-							<p>Linux é um sistema de código aberto desenvolvido por programadores espalhados por várias partes do mundo.</p>
-							<p>O Linux se popularizou e atualmente está bastante presente no mercado de servidores corporativos e computadores pessoais (PCs). Por conta disso, é necessário que um profissional da área de TI saiba utilizar os comandos do terminal do Linux. As ferramentas de linha de comando são fundamentais para realizar as mais variadas tarefas.</p>
-							<p>O terminal do Linux é bastante poderoso, portanto, dominá-lo é necessário para os mais diversos profissionais tais como administradores de sistemas, desenvolvedores (programadores), hackers etc.</p>
-
-							<h5>Conhecimentos adiquiridos</h5>
-							<ul>
-								<li>Utilizar os comandos do terminal do Linux.</li>
-								<li>Realizar as mais diversas tarefas com os comandos do Linux.</li>
-								<li>Utilizar as ferramentas de linha de comando.</li>
-							</ul>
+							<span class="card-title grey-text text-darken-4"><p class="flow-text">Python - Configurando o VS Code</p></span>
+							<p><a href="https://www.treinaweb.com.br/direto-ao-ponto/python-configurando-o-vs-code" target="_blank">Ir para o direto ao ponto</a></p>
 						</div>
 					</div>
 				</div>
 
-				<div class="col m6">
+				<div class="col l6">
 					<div class="card">
-						<div class="card-image waves-effect waves-block waves-light">
-							<img src="imagens/curso_logicaCodeSkulptor.jpg" alt="Imagem do curso de Lógica de Programação com Python e CodeSkulptor" class="activator responsive-img">
+						<div class="card-image">
+							<img src="static/img/direto_ao_ponto/java_configurando_vscode.png" alt="Imagem ilustrativa do direto ao ponto Java - Configurando o VS Code" class="activator responsive-img">
 						</div>
 						<div class="card-content">
-							<span class="card-title activator grey-text text-darken-4"><p class="flow-text">Lógica de Programação</p></span>
-							<p><a href="https://www.udemy.com/certificate/UC-A674LHWF/" target="_blank">Ver certificado</a></p>
-						</div>
-						<div class="card-reveal">
-							<span class="card-title activator grey-text text-darken-4">Lógica de Programação com Python e CodeSkulptor</span>
-							<h5>Sobre o curso</h5>
-							<p>Esse curso ensina lógica de programação utilizando a linguagem Python através da ferramenta CodeSkulptor que é uma excelente forma de você começar a desenvolver os seus programas.</p>
-							<p>O curso possui aulas curtas, dinâmicas e vários exercícios</p>
-
-							<h5>Conhecimentos adiquiridos</h5>
-							<ul>
-								<li>Aprender lógica de programação.</li>
-								<li>Aprender a linguagem de programação Python.</li>
-								<li>Desenvolver programas com o CodeSkulptor.</li>
-								<li>Desenvolver seus próprios programas utilizando a linguagem Python.</li>
-							</ul>
+							<span class="card-title grey-text text-darken-4"><p class="flow-text">Java - Configurando o VS Code</p></span>
+							<p><a href="https://www.treinaweb.com.br/direto-ao-ponto/java-configurando-o-vs-code" target="_blank">Ir para o direto ao ponto</a></p>
 						</div>
 					</div>
 				</div>
 			</div>
 			<!-- Fim da linha 2 de cards -->
 
-			<!-- Inicio da linha 3 de cards -->
+			<!-- Linha 3 de cards -->
 			<div class="row center">
-				<div class="col m6">
+				<div class="col l6">
 					<div class="card">
-						<div class="card-image waves-effect waves-block waves-light">
-							<img src="imagens/curso_python3Iniciantes.jpg" alt="Imagem do curso Python 3 para Iniciantes" class="activator responsive-img">
+						<div class="card-image">
+							<img src="static/img/direto_ao_ponto/java_consumindo_apis.png" alt="Imagem ilustrativa do direto ao ponto Java - Consumindo APIs" class="activator responsive-img">
 						</div>
 						<div class="card-content">
-							<span class="card-title activator grey-text text-darken-4"><p class="flow-text">Python3 para iniciantes</p></span>
-							<p><a href="https://www.udemy.com/certificate/UC-G56R5C08/" target="_blank">Ver certificado</a></p>
-						</div>
-						<div class="card-reveal">
-							<span class="card-title activator grey-text text-darken-4">Python 3 para Iniciantes</span>
-							<h5>Sobre o curso</h5>
-							<p>Esse curso vai direto ao ponto, sem enrolação para otimizar o seu tempo e fazer com que você aprenda a linguagem Python o mais rápido possível. </p>
-
-							<h5>Conhecimentos adiquiridos</h5>
-							<ul>
-								<li>Aprender a programar na linguagem Python.</li>
-								<li>Conhecer os recursos da linguagem Python.</li>
-								<li>Desenvolver lógica de programação.</li>
-								<li>Criar seus próprios programas em Python.</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-
-				<div class="col m6">
-					<div class="card">
-						<div class="card-image waves-effect waves-block waves-light">
-							<img src="imagens/curso_pythonDjango.jpg" alt="Imagem do curso de De desenvolvimento web com Python e Django" class="activator responsive-img">
-						</div>
-						<div class="card-content">
-							<span class="card-title activator grey-text text-darken-4"><p class="flow-text">Desenvolvimento WEB com Python e Django</p></span>
-							<p><a href="https://www.udemy.com/certificate/UC-82W4E5JK/" target="_blank">Ver certificado</a></p>
-						</div>
-						<div class="card-reveal">
-							<span class="card-title activator grey-text text-darken-4">Desenvolvimento WEB com Python e Django</span>
-							<h5>Sobre o curso</h5>
-							<p>Curso de desenvolvimento com a linguagem Python e o framework Django</p>
-
-							<h5>Conhecimentos adiquiridos</h5>
-							<ul>
-								<li>Trabalhar com migrations.</li>
-								<li>Trabalhar com migrations.</li>
-								<li>Trabalhar com a administração do Django.</li>
-								<li>Autenticação de usuários.</li>
-								<li>Mensagens de feedback (contexto) para o usuário.</li>
-								<li>Criação de managers do Django.</li>
-								<li>Apps e libs que agilizam o trabalho em diversas etapas.</li>
-								<li>Deploy de uma Aplicação Web Django no Heroku.</li>
-							</ul>
+							<span class="card-title grey-text text-darken-4"><p class="flow-text">Java - Consumindo APIs</p></span>
+							<p><a href="https://www.treinaweb.com.br/direto-ao-ponto/java-consumindo-apis" target="_blank">Ir para o direto ao ponto</a></p>
 						</div>
 					</div>
 				</div>
 			</div>
 			<!-- Fim da linha 3 de cards -->
-
-
-
 		</div>
 
 		<!--Fim do conteudo -->
@@ -262,16 +167,15 @@
 					<div class="col l4 offset-l2 s12">
 						<h5 class="white-text">Contatos</h5>
 						<ul>
-							<li><a class="grey-text text-lighten-3" href="https://www.facebook.com/cleysonph" target="_blank">Facebook</a></li>
 							<li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/cleysonph/" target="_blank">LinkedIn</a></li>
 							<li><a class="grey-text text-lighten-3" href="https://github.com/cleysonph/" target="_blank">GitHub</a></li>
-							<li><a class="grey-text text-lighten-3" href="https://www.instagram.com/cleyson.py/" target="_blank">Instagram</a></li>
+							<li><a class="grey-text text-lighten-3" href="https://www.instagram.com/cleysonph/" target="_blank">Instagram</a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 			<div class="footer-copyright">
-				<div class="container">&copy; 2018 <a class="white-text" href="https://github.com/CleysonPH/cleysonph.github.io" target="_blank">Cleyson Lima</a></div>
+				<div class="container">&copy; 2021 <a class="white-text" href="https://github.com/CleysonPH/cleysonph.github.io" target="_blank">Cleyson Lima</a></div>
 			</div>
 		</footer>
 
@@ -284,6 +188,6 @@
 			$(".button-collapse").sideNav();
 		</script>
 		<!-- Import pace js -->
-		<script type="text/javascript" src="pace/pace.min.js"></script>
+		<script type="text/javascript" src="static/js/pace.min.js"></script>
 	</body>
 </html>
