@@ -29,6 +29,17 @@
 	</head>
 
 	<body>
+		<!-- Estrutura Conteudos Dropdown -->
+		<ul id="conteudos" class="dropdown-content">
+			<li><a href="cursos.html">Cursos</a></li>
+			<li><a href="diretoaoponto.html">Direto ao Ponto</a></li>
+		</ul>
+
+		<ul id="conteudos-mobile" class="dropdown-content">
+			<li><a href="cursos.html">Cursos</a></li>
+			<li><a href="diretoaoponto.html">Direto ao Ponto</a></li>
+		</ul>
+
 		<!-- Inicio da navbar -->
 		<div class="navbar-fixed">
 			<nav class="blue-grey lighten-1">
@@ -37,13 +48,13 @@
 					<a href="#" data-activates="mobile-demo" class="button-collapse"><img src="static/img/icons/menu.png" alt="" style="margin-top: 8px;"></a>
 
 					<ul class="right hide-on-med-and-down">
-						<li><a href="cursos.html">Cursos</a></li>
-						<li class="active"><a href="#">Estatísticas</a></li>
+						<li><a class="dropdown-button" href="#!" data-activates="conteudos">Conteúdos<i class="material-icons right">arrow_drop_down</i></a></li>
+						<li><a href="estatisticas.html">Estatísticas</a></li>
 					</ul>
 
 					<ul class="side-nav" id="mobile-demo">
-						<li><a href="cursos.html">Cursos</a></li>
-						<li class="active"><a href="#">Estatísticas</a></li>
+						<li><a class="dropdown-button" href="#!" data-activates="conteudos-mobile">Conteúdos<i class="material-icons right">arrow_drop_down</i></a></li>
+						<li><a href="estatisticas.html">Estatísticas</a></li>
 					</ul>
 				</div>
 			</nav>
