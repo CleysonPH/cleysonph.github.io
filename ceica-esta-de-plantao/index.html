@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceiça está de plantão hoje?</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            font-size: 5rem;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="resultado"></h1>
+
+    <script>
+        function exibirResultado() {
+            // Define a data inicial (25/10/2024) no fuso horário local do usuário
+            const dataInicial = new Date(2024, 9, 25); // Mês é 9 porque janeiro é 0 em JavaScript
+            const dataAtual = new Date();
+
+            // Normaliza a data inicial e a data atual para garantir apenas ano, mês e dia (sem hora)
+            const dataInicialLocal = new Date(dataInicial.getFullYear(), dataInicial.getMonth(), dataInicial.getDate());
+            const dataAtualLocal = new Date(dataAtual.getFullYear(), dataAtual.getMonth(), dataAtual.getDate());
+
+            // Calcula a diferença de dias entre a data inicial e a data atual no fuso horário do usuário
+            const diferencaDias = Math.floor((dataAtualLocal - dataInicialLocal) / (1000 * 60 * 60 * 24));
+
+            // Alterna entre "SIM" e "NÃO" com base na paridade do número de dias
+            const resultado = (diferencaDias % 2 === 0) ? "NÃO" : "SIM";
+
+            // Exibe o resultado na página
+            document.getElementById("resultado").innerText = resultado;
+        }
+
+        // Chama a função para exibir o resultado
+        exibirResultado();
+    </script>
+</body>
+</html>
