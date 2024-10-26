@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceiça está de plantão?</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 600px;
+            margin-top: 20px;
+            font-size: 1.2rem;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Plantão da Ceiça</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Resultado</th>
+                </tr>
+            </thead>
+            <tbody id="tabela-resultados">
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        function formatarData(data) {
+            const dia = String(data.getDate()).padStart(2, '0');
+            const mes = String(data.getMonth() + 1).padStart(2, '0');
+            const ano = data.getFullYear();
+            return `${dia}/${mes}/${ano}`;
+        }
+
+        function gerarResultados() {
+            // Define a data inicial base para alternância de "SIM" e "NÃO" (25/10/2024)
+            const dataBase = new Date(2024, 9, 25); // Mês é 9 pois janeiro é 0
+
+            // Usa a data atual do usuário
+            const dataAtual = new Date();
+            const tabelaResultados = document.getElementById("tabela-resultados");
+
+            // Calcula a diferença de dias entre a data base e a data atual
+            const diferencaDias = Math.floor((dataAtual - dataBase) / (1000 * 60 * 60 * 24));
+
+            // Gera os próximos 30 dias a partir da data atual
+            for (let i = 0; i <= 30; i++) {
+                const dataDia = new Date(dataAtual);
+                dataDia.setDate(dataAtual.getDate() + i); // Incrementa o dia
+                
+                // Determina "SIM" ou "NÃO" usando a diferença de dias ajustada para o índice
+                const resultado = ((diferencaDias + i) % 2 === 0) ? "NÃO" : "SIM";
+
+                // Cria a linha da tabela
+                const linha = document.createElement("tr");
+                const celulaData = document.createElement("td");
+                const celulaResultado = document.createElement("td");
+
+                // Preenche as células com a data formatada e o resultado
+                celulaData.textContent = formatarData(dataDia);
+                celulaResultado.textContent = resultado;
+
+                linha.appendChild(celulaData);
+                linha.appendChild(celulaResultado);
+                tabelaResultados.appendChild(linha);
+            }
+        }
+
+        // Gera e exibe a tabela de resultados
+        gerarResultados();
+    </script>
+</body>
+</html>

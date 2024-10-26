@@ -7,20 +7,34 @@
     <style>
         body {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
+            margin: 0;
         }
         h1 {
             font-size: 5rem;
             color: #333;
         }
+        .botao {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            color: #fff;
+            background-color: #333;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
     <h1 id="resultado"></h1>
+    <a href="./table.html" class="botao">Ver próximos 30 dias</a> <!-- Botão para a versão da tabela -->
 
     <script>
         function exibirResultado() {
