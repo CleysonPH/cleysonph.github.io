@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fofoca Glay - Contagem Regressiva</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="background-animation">
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+        <div class="circle circle-3"></div>
+      </div>
+
+      <div class="content">
+        <div class="emoji-container">
+          <span class="emoji">🤫</span>
+        </div>
+
+        <h1 class="title">Tempo restante para liberar a fofoca</h1>
+
+        <div class="timer-container">
+          <div class="timer-box">
+            <div class="timer-value" id="hours">00</div>
+            <div class="timer-label">Horas</div>
+          </div>
+          <div class="timer-separator">:</div>
+          <div class="timer-box">
+            <div class="timer-value" id="minutes">00</div>
+            <div class="timer-label">Minutos</div>
+          </div>
+          <div class="timer-separator">:</div>
+          <div class="timer-box">
+            <div class="timer-value" id="seconds">00</div>
+            <div class="timer-label">Segundos</div>
+          </div>
+        </div>
+
+        <div class="message" id="message">
+          <p>A revelação está chegando... 👀</p>
+        </div>
+
+        <div class="progress-container">
+          <div class="progress-bar" id="progressBar"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
